@@ -12,37 +12,111 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <!-- font awesome -->
-    <script src="https://use.fontawesome.com/87db611af7.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V"
+    crossorigin="anonymous"
+  />
     
 </head>
+
+
 <body>
 
-    <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"> <img src="./puppies/PUPPIES & BOUTIQUE (2).png" id="header-logo-img" alt="SMALL PAWS LOGO"> </a>
-          <a href="./index.html">Home</a>
-          <a href="./about.html">About Us</a>
-          <a href="./contact.html"> Contact Us</a>
-         </div> 
-      </nav>
+   
+ <!-- navigation bar links for Home, Contact, About, Green Small -->
+
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html" > <img src="./puppies/LOGO.png" alt="logo" class="logoimgnav"></a>
+    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+          
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+
+      </ul>
+     </div>
+    </nav>
 
 
-     <!-- content  -->
-    <h2>Contact US</h2>
+<main>
+
+    <div class="container ">
+        <div>
+            <h2>Contact Us</h2>
+            <p class="text-center"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, magni blanditiis laudantium reiciendis commodi hic amet dolor ipsum cupiditate qui, tempora fugiat quos quas sapiente impedit modi consequuntur alias corrupti.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6 img">
+                <img src="puppies/products-Wagwellies_007.jpg" alt="A dog in a blanket" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6">
+                <form>
+                    <input type="text" class="form-control form-control-lg mb-4" id="firstName" placeholder="First Name" required> 
+                
+                    <input type="text" class="form-control form-control-lg mb-4" id="lastName" placeholder="Last Name"  required> 
+                   
+                    <input type="email" class="form-control form-control-lg mb-4" id="email" placeholder="Email Address" required> 
+            
+                    <textarea class="form-control form-control-lg " name="" id="" cols="40" rows="10" placeholder=""></textarea>
     
-    <img src="./puppies/pompom.jpg" alt="pom puppy smiling">
+                 
+                    <a href="#" class="btn btn-lg btn-dark" id="submit">Submit</a>
+                </form>
+            </div>
+        </div>
+    </div>
 
 
-    <ul>
-        <li>changing ideas of what type of pet store and design</li>
-        <lil>just some basic content to get structure started</lil>
-
-    </ul>
 
 
-<!-- footer  -->
-    <footer id="footer">
-        <h2>Contact Information</h2>
-    </footer>
+
+
+</main>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!-- Footer - social media icons, map, store hours -->
+<footer id="footer">
+    <div class="d-flex social-icons justify-content-end">
+        <a href="#"><i class="fab fa-instagram p-2"></i></a>
+        <a href="#"><i class="fab fa-twitter-square p-2"></i></a> 
+        <a href="#"><i class="fab fa-facebook-square p-2"></i></a>
+        <a href="#"><i class="fab fa-pinterest-square p-2"></i></a>
+       </div>
+</footer>
+
+
+
+
+
+
+
+
 </body>
 </html>

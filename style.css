@@ -1,15 +1,33 @@
-#header{
-    width:100%;
-    background: #e151af ;
-}
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;  
+    height: 100px;
+    background-color:#4D663D;
+    color: white;
+    text-align: center;
+  }
 
-#header-logo-img{
-    width: 240px;
-    height: 220px;
-    border-radius: 50%;
-}
+  .logoimgnav{
+      width: 100px;
+  }
 
-#footer{
-    width:100%;
-    background: #e151af;
-}
+  .navbar{
+      background-color: #4D663D;
+      width: 100%;
+      height: 100px;
+
+  }
+
+
+
+  
+  a{
+    color: white;
+  }
+
+  .fab{
+      color: white;
+      font-size: 50px;
+  }
