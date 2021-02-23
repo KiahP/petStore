@@ -1,38 +1,67 @@
 var shop = [
     {
-      title: 'Tigers',
-      image: 'https://images.unsplash.com/photo-1590767187868-b8e9ece0974b?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8dGlnZXJ8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60',
-      price: '$7,500-15,000',
-      description: "It's a tiger",
+      title: 'Nike Hoodie',
+      image: './puppies/nikedrip.jpg',
+      price: '35.95',
+      description: "checks over stripes",
     },
     {
-      title: 'Yorkie',
-      image: './puppies/cutegirlyorkie.jpg',
-      price: '$600',
-      description: "yorkie puppy",
+      title: 'Furberry',
+      image: './puppies/dior dior.jpg',
+      price: '40.00',
+      description: "Christian Dior, Dior I'm up in all the stores",
     },
     {
       title: 'Pom',
-      image: './puppies/pompom.jpg',
-      price: '$400',
+      image: '',
+      price: '69.95',
       description: "pomeranian puppy",
     },
     {
       title: 'Poodle',
-      image: './puppies/redpoodlepup.jpg',
-      price: '$350',
+      image: '',
+      price: '60.00',
       description: "poodle puppy",
     },
     ];
+   
+
     var postHTML = ""
     for (var i=0; i < shop.length; i++){
-      var container = '<div class="container" ' + '>'
-        var heading = '<div class=" ' + '"><h2>' + shop[i].title + '</h2>'
-        var image = '<img src="' + shop[i].image + '"/>'
+        var container = '<div class="container-md">' +
+        '<div class="">' + '<div class="" style="width: 18rem;">'
+        var image = '<img src="' + shop[i].image + '" class="card-img-top"  alt="..."/>'
+        var heading = '<div class="card-body text-center" ><h2 class="card-title">' + shop[i].title + '</h2>'
         var price = '<p> $' + shop[i].price + '</p>'
-        var description = '<div class=""><p>'+ shop[i].description + '</p><button type="button" class="">add to cart</button></div></div>'
-        var concatThis = heading + image + price + description;
+        var description = '<div class=""><p>'+ shop[i].description + '</p><button type="button" class="btn btn-primary">add to cart</button></div></div></div></div></div>'
+        var concatThis = container + image + heading + price + description;
         postHTML = postHTML + concatThis
     }
     document.getElementById('market').innerHTML = postHTML
+
+   
+    // var postHTML = "" 
+    //  for (var i=0; i < shop.length; i++){
+    //   var container = '<div class="container col-lg-4">'
+    //   var heading = '<div class=" mb-3 text-center"><div class="card mb-4 shadow-sm"> ' + '<div class="card-header"><h4 class="my-0 fw-normal '+ '"> ' + shop[i].title + '</h4></div>';
+    //   var price = '<div class="card-body"><h1 class="card-title pricing-card-title' + '">$' + shop[i].price + '</h1>';
+    //   var image = '<ul class="list-unstyled mt-3 mb-4 ' + '"> <ul class="list-unstyled mt-3 mb-4"> <img src="' + shop[i].image + '"style="" alt="Product">';
+    //   var description = '<li> ' + shop[i].description + '</li></ul><button type="button" class="w-100 btn btn-lg btn-outline-primary">Add to cart</button></div></div></div></div></div>'
+    //    var concatThis = container + heading + image + price + description;
+    //    postHTML = postHTML + concatThis              }
+    //   document.getElementById('market').innerHTML = postHTML
+
+
+
+    // var postHTML = ""
+    // for (var i=0; i < shop.length; i++){
+    //     var container = '<div class="container" ' + '>'
+    //     var heading = '<div class=" ' + '"><h2>' + shop[i].title + '</h2>'
+    //     var image = '<img src="' + shop[i].image + '"/>'
+    //     var price = '<p> $' + shop[i].price + '</p>'
+    //     var description = '<div class=""><p>'+ shop[i].description + '</p><button type="button" class="">add to cart</button></div></div>'
+    //     var concatThis = heading + image + price + description;
+    //     postHTML = postHTML + concatThis
+    // }
+    // document.getElementById('market').innerHTML = postHTML
 
