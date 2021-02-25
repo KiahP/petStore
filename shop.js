@@ -6,20 +6,20 @@ var shop = [
       description: "checks over stripes",
     },
     {
-      title: 'Furberry',
+      title: 'Furberry Sweater',
       image: './puppies/dior dior.jpg',
       price: '40.00',
       description: "Christian Dior, Dior I'm up in all the stores",
     },
     {
-      title: 'Pom',
-      image: '',
+      title: 'Fendi Fall Sweater',
+      image: './puppies/fendidrip.png',
       price: '69.95',
-      description: "pomeranian puppy",
+      description: "Keep your pup warm this winter with our Fendi Fall sweater",
     },
     {
-      title: 'Poodle',
-      image: '',
+      title: 'Pupreme Hoodie',
+      image: './puppies/pupremedrip.jpg',
       price: '60.00',
       description: "poodle puppy",
     },
@@ -28,12 +28,11 @@ var shop = [
 
     var postHTML = ""
     for (var i=0; i < shop.length; i++){
-        var container = '<div class="container-md">' +
-        '<div class="">' + '<div class="" style="width: 18rem;">'
+        var container = '<div class="container-fluid"> <div class="row"><div class="col-md-6 col-lg-3">  <div class="card">'
         var image = '<img src="' + shop[i].image + '" class="card-img-top"  alt="..."/>'
         var heading = '<div class="card-body text-center" ><h2 class="card-title">' + shop[i].title + '</h2>'
         var price = '<p> $' + shop[i].price + '</p>'
-        var description = '<div class=""><p>'+ shop[i].description + '</p><button type="button" class="btn btn-primary">add to cart</button></div></div></div></div></div>'
+        var description = '<div class=""><p>'+ shop[i].description + '</p><button type="button" class="btn btn-primary">add to cart</button></div></div></div></div></div></div>'
         var concatThis = container + image + heading + price + description;
         postHTML = postHTML + concatThis
     }

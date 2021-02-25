@@ -1,29 +1,37 @@
-#footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;  
-    height: 100px;
-    background-color:#4D663D;
-    color: white;
-    text-align: center;
-    
-  }
+.carousel-item{
+  height: 100vh;
+  min-height: 300px;
+  background: no repeat center center scroll;
+  background-size: cover; 
+}
 
-  .logoimgnav{
-      width: 100px;
-  }
+
+
+
+  /* nav bar css */
+
+
+  .logoimg{
+      width: 100%;
+      height:100px;
+  } 
 
   .navbar{
       background-color: #4D663D;
       width: 100%;
-      height: 200px;
-
+      height: 100px;
   }
 
+  .navbar-brand{
+      width: 100%;
+      height: 100px;
+      
+  }
+
+/* footer * everything in it  css */
 
 
-  
+ 
   a{
     color: white;
   }
@@ -33,18 +41,14 @@
       font-size: 50px;
   }
 
-  .carouselExampleSlidesOnly{
-      width: 100px;
-      height: 200px;
 
-  }
 
-  .logobrand{
-      width: 100px;
-      height: 100px;
-  }
-
+  /* images in my shop */
   .nikehoodieimg{
       width:100px;
       height:100px;
   }
+
+
+
+
