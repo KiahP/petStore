@@ -24,6 +24,8 @@
 /* footer * everything in it  css */
 
 
+
+
  
   a{
     color: white;
@@ -31,7 +33,7 @@
 
   .fab{
       color: white;
-      font-size: 50px;
+      font-size: 25px;
   }
 
 
@@ -61,10 +63,7 @@
     flex-direction: row;
   }
 
-  /* .carousel-caption{
-    display:
-    
-  } */
+ 
 
   .fas1{
    font-size: 80px;
@@ -76,3 +75,27 @@
     border: 5px solid #4D663D;
   
   }
+
+
+  .t-image {
+    position: relative; /* Declared position allows for location changes */
+    top: -180px; /* Moves the image 2px closer to the top of the page */
+}
+
+.a-image{
+  position:relative;
+  top: -150px;
+}
+.b-image{
+  position:relative;
+  top: -150px;
+}
+
+.newsLetter{
+  height:180px;
+}
+
+
+.boutique{
+  border-radius: 50%;
+}
